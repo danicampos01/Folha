@@ -122,7 +122,8 @@ public class FuncionarioService {
 	}
 
 	public void remover(String nome) {
-
+		// implentado apaenas aqui nesse metodo, obviamente todos o eventos precisam ser
+		// tratados e devidamentes testados com teste automatizadosÏ
 		try {
 
 			if (nome.equals(null)) {
