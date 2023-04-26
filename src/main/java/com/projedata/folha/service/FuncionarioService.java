@@ -8,6 +8,7 @@ import java.util.*;
 
 import com.projedata.folha.model.Funcionario;
 import com.projedata.folha.model.Pessoa;
+import com.projedata.folha.util.ExceptionGeradas;
 import com.projedata.folha.util.Util;
 
 public class FuncionarioService {
@@ -121,11 +122,23 @@ public class FuncionarioService {
 	}
 
 	public void remover(String nome) {
-		funcionarios.removeIf(funcionario -> funcionario.getNome().equals(nome));
-		System.out.println("\nFuncionario removido:" + nome);
+
+		try {
+
+			if (nome.equals(null)) {
+				throw new ExceptionGeradas("Nome não foi informado.");
+			}
+
+			funcionarios.removeIf(funcionario -> funcionario.getNome().equals(nome));
+			System.out.println("\nFuncionario removido:" + nome);
+		} catch (ExceptionGeradas e) {
+			System.out.println("Erro: " + e.getMessage());
+		}
+
 	}
 
 	public void inserir() {
+
 		funcionarios.add(new Funcionario("Maria", LocalDate.of(2000, 10, 18), BigDecimal.valueOf(2009.44), "Operador"));
 
 		funcionarios.add(new Funcionario("João", LocalDate.of(1990, 05, 12), BigDecimal.valueOf(2284.38), "Operador"));
