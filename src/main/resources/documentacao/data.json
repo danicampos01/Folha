@@ -1,0 +1,56 @@
+[
+  {
+    "nome": "Maria",
+    "dataNascimento": "18/10/2000",
+    "salario": "R$ 2.210,38",
+    "funcao": "Operador"
+  },
+  {
+    "nome": "Caio",
+    "dataNascimento": "02/05/1961",
+    "salario": "R$ 10.819,75",
+    "funcao": "Coordenador"
+  },
+  {
+    "nome": "Miguel",
+    "dataNascimento": "14/10/1988",
+    "salario": "R$ 21.031,87",
+    "funcao": "Diretor"
+  },
+  {
+    "nome": "Alice",
+    "dataNascimento": "05/01/1995",
+    "salario": "R$ 2.458,15",
+    "funcao": "Recepcionista"
+  },
+  {
+    "nome": "Heitor",
+    "dataNascimento": "19/11/1999",
+    "salario": "R$ 1.740,99",
+    "funcao": "Operador"
+  },
+  {
+    "nome": "Arthur",
+    "dataNascimento": "31/03/1993",
+    "salario": "R$ 1.740,99",
+    "funcao": "Operador"
+  },
+  {
+    "nome": "Laura",
+    "dataNascimento": "08/07/1994",
+    "salario": "R$ 3.319,20",
+    "funcao": "Gerente"
+  },
+  {
+    "nome": "Heloisa",
+    "dataNascimento": "24/05/2003",
+    "salario": "R$ 1.767,54",
+    "funcao": "Eletricista"
+  },
+  {
+    "nome": "Helena",
+    "dataNascimento": "02/09/1996",
+    "salario": "R$ 3.079,92",
+    "funcao": "Gerente"
+  }
+]
