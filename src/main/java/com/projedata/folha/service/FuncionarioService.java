@@ -26,7 +26,7 @@ public class FuncionarioService {
 			BigDecimal salarioDividido = f.getSalario().divide(salarioMinimo, 2, RoundingMode.HALF_UP);
 			String resultado = salarioDividido.compareTo(BigDecimal.ONE) < 0 ? " menos de um"
 					: salarioDividido.toString();
-			System.out.println(f.getNome() + " - " + resultado + " salário(s) mínimo (s)");
+			System.out.println(f.getNome() + " - " + resultado.toString().replace('.', ',') + " salário(s) mínimo (s)");
 		}
 
 		// funcionarios.forEach(funcionario -> System.out.println(funcionario.getNome()
